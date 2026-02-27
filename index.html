@@ -120,6 +120,8 @@
                     <p style="display:none">
                         <label>Don’t fill this out: <input name="bot-field"></label>
                     </p>
+
+                    <div id="formAlert" class="form-alert" role="status" aria-live="polite"></div>
                     <label class="field">
                         <span>Name</span>
                         <input type="text" name="name" placeholder="Your name" required>
@@ -134,6 +136,13 @@
                         <span>Message</span>
                         <textarea name="message" rows="6" placeholder="Write your message..." minlength="10"
                             maxlength="2000" required></textarea>
+                    </label>
+
+                    <label class="consent full">
+                        <input type="checkbox" name="consent" value="yes" required />
+                        <span>
+                            I agree that my information will be used to contact me regarding this request.
+                        </span>
                     </label>
 
                     <button type="submit" class="submit-btn">Send Message</button>

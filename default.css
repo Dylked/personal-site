@@ -214,6 +214,50 @@ body {
     max-width: 600px;
 }
 
+.form-alert {
+    display: none;
+    margin-bottom: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--vscode-border);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--vscode-text);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.form-alert.success {
+    display: block;
+    border-color: rgba(46, 204, 113, 0.35);
+    background: rgba(46, 204, 113, 0.10);
+}
+
+.form-alert.error {
+    display: block;
+    border-color: rgba(231, 76, 60, 0.45);
+    background: rgba(231, 76, 60, 0.10);
+}
+
+.consent {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 4px;
+}
+
+.consent input {
+    margin-top: 3px;
+}
+
+.consent span {
+    font-family: "Roboto", sans-serif;
+    color: var(--vscode-text);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+
 
 
 /* Bullet list */
@@ -325,6 +369,12 @@ body.theme-light .contact-form textarea {
 .contact-form textarea:focus {
     border-color: var(--accent-color);
     box-shadow: 0 0 0 4px rgba(0, 122, 204, 0.18);
+}
+
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-color: rgba(231, 76, 60, 0.35);
 }
 
 .field {
