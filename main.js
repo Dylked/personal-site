@@ -71,7 +71,7 @@
 
             if (!res.ok) throw new Error("Request failed");
 
-            showAlert("success", "Message sent. Thanks — I’ll get back to you soon.");
+            showAlert("success", "Message sent. Thanks, I’ll get back to you soon.");
             form.reset();
         } catch (err) {
             showAlert("error", "Something went wrong. Please try again or email me directly to dn.nunezdylan@gmail.com .");
