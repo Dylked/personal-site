@@ -77,7 +77,7 @@
             showAlert("error", "Something went wrong. Please try again or email me directly to dn.nunezdylan@gmail.com .");
         } finally {
             submitBtn.disabled = false;
-            submitBtn.textContent = "Send message →";
+            submitBtn.textContent = "Send message";
         }
     })
 })();
