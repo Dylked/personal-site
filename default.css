@@ -166,14 +166,14 @@ body {
 .headline {
     font-family: "Roboto Mono", monospace;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-color);
 }
 
 /* Muted text */
 .muted {
     color: var(--muted-color);
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /* Sections */
@@ -185,7 +185,7 @@ body {
 
 .section-title {
     font-family: "Roboto Mono", monospace;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: .3px;
     color: var(--muted-color);
     margin-bottom: 12px;
@@ -216,12 +216,13 @@ body {
 
 .form-alert {
     display: none;
+    grid-column: 1 / -1;
     margin-bottom: 14px;
     padding: 12px 14px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
     background: rgba(255, 255, 255, 0.03);
-    color: var(--border-color);
+    color: var(--text-color);
     font-size: 14px;
     line-height: 1.5;
 }
@@ -270,6 +271,7 @@ body {
     margin-bottom: 8px;
     font-size: 14px;
     color: var(--text-color);
+    text-align: left;
 }
 
 /* Tech tags */
@@ -298,7 +300,7 @@ body {
 .meta {
     margin-top: 26px;
     font-family: "Roboto Mono", monospace;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--muted-color);
 }
 

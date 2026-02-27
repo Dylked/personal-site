@@ -114,7 +114,8 @@
                 </div>
 
 
-                <form name="contact" class="contact-form" method="POST" netlify netlify-honeypot="bot-field">
+                <form name="contact" id="contactForm" class="contact-form" method="POST" netlify
+                    netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="contact">
 
                     <p style="display:none">
@@ -124,28 +125,27 @@
                     <div id="formAlert" class="form-alert" role="status" aria-live="polite"></div>
                     <label class="field">
                         <span>Name</span>
-                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="text" name="name" placeholder="Your name">
                     </label>
 
                     <label class="field">
                         <span>Email</span>
-                        <input type="email" name="email" placeholder="your@email.com" required>
+                        <input type="email" name="email" placeholder="your@email.com">
                     </label>
 
                     <label class="field full">
                         <span>Message</span>
-                        <textarea name="message" rows="6" placeholder="Write your message..." minlength="10"
-                            maxlength="2000" required></textarea>
+                        <textarea name="message" rows="6" placeholder="Write your message..."></textarea>
                     </label>
 
                     <label class="consent full">
-                        <input type="checkbox" name="consent" value="yes" required />
+                        <input type="checkbox" id="consent" name="consent" value="yes" />
                         <span>
                             I agree that my information will be used to contact me regarding this request.
                         </span>
                     </label>
 
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" id="submitBtn" class="submit-btn">Send Message</button>
                 </form>
             </div>
         </div>
