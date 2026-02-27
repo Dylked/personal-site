@@ -1,0 +1,395 @@
+:root {
+    /* Theme dark default*/
+    --bg-color: #1e1e1e;
+    --panel-color: #252526;
+    --border-color: #2d2d2d;
+    --text-color: #d4d4d4;
+    --muted-color: #9aa0a6;
+    --accent-color: #007acc;
+
+    /* page */
+    --page-bg-color: #eaeaea;
+}
+
+body.theme-light {
+    /* Theme light */
+    --bg-color: #ffffff;
+    --panel-color: #f3f3f3;
+    --border-color: #e1e1e1;
+    --text-color: #1f2328;
+    --muted-color: #6b7280;
+    --accent-color: #007acc;
+
+    --page-bg-color: #f4f5f7;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--page-bg-color);
+    font-family: "Roboto", sans-serif;
+    color: #111;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+}
+
+.main-container {
+    width: min(1100px, 100%);
+}
+
+/* ===== Editor Frame ===== */
+.editor {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, .35);
+}
+
+/* Top bar */
+.editor-topbar {
+    height: 46px;
+    background: var(--panel-color);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    gap: 12px;
+}
+
+.file-name {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    color: var(--muted-color);
+    user-select: none;
+    letter-spacing: .2px;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 7px 10px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .15s ease;
+    line-height: 1;
+}
+
+.btn:hover {
+    border-color: var(--accent-color);
+}
+
+.btn-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Content */
+.editor-body {
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center
+}
+
+.readme {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.readme-text {
+    max-width: 560px;
+    flex: 1;
+}
+
+.readme-text h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    font-size: 34px;
+    color: var(--text-color);
+    letter-spacing: .3px;
+}
+
+.readme-text p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text-color);
+    max-width: 760px;
+    text-align: justify;
+}
+
+.meta {
+    margin-top: 14px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    color: var(--muted-color);
+}
+
+
+
+/* Headline */
+.headline {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Muted text */
+.muted {
+    color: var(--muted-color);
+    font-size: 13px;
+}
+
+/* Sections */
+.section {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.section-title {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    letter-spacing: .3px;
+    color: var(--muted-color);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 6px;
+}
+
+.section-title h2 {
+    font-family: "Fjalla One",
+        sans-serif;
+    font-size: 26px;
+    letter-spacing: .4px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.contact-sub {
+    margin: 12px auto 28px auto;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 600px;
+}
+
+
+
+/* Bullet list */
+.bullets {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.bullets li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Tech tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.02);
+    transition: .15s ease;
+}
+
+.tag:hover {
+    border-color: var(--accent-color);
+}
+
+/* Meta bottom line */
+.meta {
+    margin-top: 26px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    color: var(--muted-color);
+}
+
+.contact-section {
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+}
+
+.contact-title {
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+    color: var(--muted-color);
+    margin-bottom: 10px;
+}
+
+.contact-card h2 {
+    margin: 0 0 20px 0;
+    color: var(--text-color);
+}
+
+.contact-form {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 14px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+
+    color: var(--text-color);
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+
+    outline: none;
+    resize: none;
+
+}
+
+
+body.theme-light .contact-form input,
+body.theme-light .contact-form textarea {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    color: var(--text-color);
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(0, 122, 204, 0.18);
+}
+
+.field {
+    display: grid;
+    gap: 8px;
+}
+
+.field span {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    color: var(--muted-color);
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+
+.submit-btn {
+    width: fit-content;
+    padding: 10px 18px;
+    border-radius: 10px;
+
+    color: var(--text-color);
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid var(--accent-color);
+    background: var(--accent-color);
+    color: #fff;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    border-color: var(--accent-color);
+    opacity: .9;
+}
+
+/* responsive */
+
+@media (max-width: 800px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .editor-body {
+        padding: 24px;
+    }
+
+    .readme {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    #contact {
+        text-align: left;
+    }
+}

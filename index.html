@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dylan Nunez</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300;400;500&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+
+    <link rel='stylesheet' type='text/css' media='screen' href='default.css'>
+</head>
+
+<body>
+    <div class="page">
+        <div class="main-container">
+
+            <div class="editor">
+                <div class="editor-topbar">
+                    <div class="file-name">README.md</div>
+
+                    <div class="topbar-actions">
+                        <a class="btn btn-link" href="#contact">Contact</a>
+                        <button id="themeToggle" class="btn" type="button" aria-label="Toggle theme">🌙</button>
+                    </div>
+                </div>
+
+                <div class="editor-body">
+                    <div class="readme">
+                        <!-- Remplace profile.jpg par ta photo -->
+                        <img class="avatar" src="images/dylan_profile.jpg" alt="Photo de profil de Dylan Nunez">
+
+                        <div class="readme-text">
+
+                            <h1>Dylan Nunez</h1>
+
+                            <p>
+                                <strong class="headline">
+                                    Full Stack Software Engineer
+                                </strong><br>
+                                <span class="muted">Paris, France • Open to opportunities</span>
+                            </p>
+
+                            <div class="section">
+                                <div class="section-title">Profile</div>
+                                <p>
+                                    Full Stack Software Engineer experienced in building web applications
+                                    combining backend systems, frontend interfaces, databases, and AI-driven features.
+                                    I focus on clean architecture, maintainable code, and performance-oriented
+                                    solutions.
+                                </p>
+                            </div>
+
+                            <div class="section">
+                                <div class="section-title">Core Technologies</div>
+                                <div class="tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">PHP</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">React</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">LLM</span>
+                                    <span class="tag">RAG</span>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <div class="section-title">Experience</div>
+                                <ul class="bullets">
+                                    <li>Development of business-oriented platforms (e-commerce, internal tools)</li>
+                                    <li>Design and implementation of APIs and automation workflows</li>
+                                    <li>Integration of AI components into production systems</li>
+                                    <li>Handling complex business logic with scalability in mind</li>
+                                </ul>
+                            </div>
+
+                            <div class="section">
+                                <div class="section-title">Approach</div>
+                                <p>
+                                    I collaborate with product, technical, and business teams to translate
+                                    functional requirements into reliable and scalable systems.
+                                    I value clarity, simplicity, and long-term maintainability in every project.
+                                </p>
+                            </div>
+
+                            <div class="meta">
+                                Currently seeking Full Stack Software Engineer opportunities.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h2>Get in touch</h2>
+                    <p class="contact-sub">
+                        Feel free to reach out for collaboration, opportunities, or technical discussions.
+                    </p>
+                </div>
+
+
+                <form class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+
+                    <p style="display:none">
+                        <label>Don’t fill this out: <input name="bot-field"></label>
+                    </p>
+                    <label class="field">
+                        <span>Name</span>
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </label>
+
+                    <label class="field">
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </label>
+
+                    <label class="field full">
+                        <span>Message</span>
+                        <textarea name="message" rows="6" placeholder="Write your message..." minlength="10"
+                            maxlength="2000" required></textarea>
+                    </label>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
